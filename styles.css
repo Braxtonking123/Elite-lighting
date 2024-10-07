@@ -1,0 +1,421 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css');
+
+html{
+    width: 99%;
+    height: auto;
+    background-image: url("lights-background.jpg");
+    background-size: contain;
+}
+html,body{
+    overflow: auto;
+    position: relative;
+}
+/*TOP BAR BELOW */
+#top-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+    .top-bar-sides{
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #top-bar-left{
+            width: 32%;
+            margin-right: 10px;
+        }
+            #phone-number-top{
+                color: white;
+                font-size: 20px;
+            }
+        #top-bar-right{
+        margin-right: 125px;
+        width: 23%;
+        }
+            #facebook-button{
+                width: 100px;
+                height: 100%;
+                background: rgb(39, 39, 252);
+            }
+            a{
+                color: white;
+                font-size: 18px;
+            }
+/* NAV BAR BELOW */
+#hero-bar{
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+    background: rgba(0, 0, 0, 0.603);
+}
+    #logo-bar{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #logo-bar img{
+            width: 30%;
+            height: 100%;
+        }
+    #button-box{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #button-bar{
+            width: 90%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 50px;
+        }
+            .hero-buttons{
+                width: 150px;
+                height: 50px;
+                color: white;
+                background: transparent;
+                border: none;
+                border-right: 1px solid white;
+                font-size: 20px;
+                transition: 1.2s;
+                cursor: pointer;
+                text-align: center;
+            }
+                .hero-buttons:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.8);
+                }
+                    .icon{
+                        color: white;
+                    }
+/* TOP CONTAINER BELOW HERE */
+#top-container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+    .top-container-sides{
+        width: 40%;
+        height: 90%;
+    }
+        #top-container-left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            #top-header{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+            }
+                #header-sentence{
+                    width: 100%;
+                    height: 30%;
+                    font-size: 40px;
+                    color: white;
+                }
+                #hook-sentence-two{
+                    width: 100%;
+                    height: 20%;
+                    font-size: 35px;
+                    color: white;
+                }
+        #top-container-right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            #contact-form {
+                width: 60%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+                label {
+                    margin-bottom: 5px;
+                    color: white;
+                }
+                
+                input, textarea {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+                
+                #response-message {
+                    margin-top: 10px;
+                    padding: 10px;
+                    color: black;
+                    background-color: #e0ffe0;
+                    border: 1px solid #4caf50;
+                    display: none;
+                }
+                
+                button {
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+                    color: black;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+                
+                button:hover {
+                    background-color: grey;
+                }
+/* BOTTOM CONTAINER BELOW */
+#bottom-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+    #bottom-container-left{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.603);
+    }
+        #main-contact-box{
+            width: 100%;
+            height: 100%;
+        }
+            #contact-us-box{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                #contact-us{
+                    width: 50%;
+                    height: 50%;
+                    color: white;
+                    text-align: center;
+                    font-size: 40px;
+                    text-decoration: underline;
+                }
+            #contact-info-box{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+                .info-boxes{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                    .info{
+                        font-size: 30px;
+                        color: white;
+                    }
+                
+    #bottom-container-right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.603);
+    }
+        #service-head{
+            width: 80%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            #offered-services{
+                color: white;
+                font-size: 40px;
+                text-decoration: underline;
+            }
+        #service-box-container{
+            width: 80%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .service-boxes{
+                width: 100%;
+                height: 33.3%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: none;
+                border-bottom: 1px solid white;
+            }
+                .service-names{
+                    width: 100%;
+                    height: 50%;
+                    color: white;
+                    font-size: 30px;
+                    text-align: center;
+                    align-self: baseline;
+                }
+                .service-explain{
+                    width: 100%;
+                    height: 20%;
+                    color: white;
+                    font-size: 20px;
+                    text-align: center;
+                    
+                }
+body {
+    position: relative; /* Positioning context for the pseudo-element */
+    overflow: hidden; /* Prevent overflow caused by the pseudo-element */
+}
+
+.pulsing-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Thinner border */
+    border-radius: 5px;
+    animation: pulse 2.5s infinite ease-in-out; /* Adjusted speed and smoother easing */
+    pointer-events: none;
+    z-index: 9999; /* Ensure this doesn't overlap other content */
+}
+
+@keyframes pulse {
+    0% {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 1);
+    }
+    100% {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Base styles for mobile devices */
+@media only screen and (max-width: 768px) {
+    #top-bar {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .top-bar-sides {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #phone-number-top, a {
+        font-size: 16px;
+    }
+
+    #hero-bar {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    #logo-bar img {
+        width: 50%;
+        height: auto;
+    }
+
+    #button-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #top-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .top-container-sides {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #bottom-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #bottom-container-left, #bottom-container-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .info-boxes, .service-boxes {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Further scaling for smaller devices like phones */
+@media only screen and (max-width: 480px) {
+    #top-bar, #hero-bar, #bottom-container {
+        padding: 10px;
+    }
+
+    #phone-number-top, a {
+        font-size: 14px;
+    }
+
+    #button-bar {
+        gap: 10px;
+    }
+
+    .hero-buttons {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .service-names, .service-explain {
+        font-size: 18px;
+    }
+}

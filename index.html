@@ -3,10 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elite Lighting</title>
     <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="EliteLightingLogo2.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 </head>
 <body>
-    
+    <div id="top-bar">
+        <div id="top-bar-left" class="top-bar-sides">
+        </div>
+        <div id="top-bar-right" class="top-bar-sides">
+            <button id="facebook-button">
+               <a href="https://www.facebook.com/profile.php?id=61566907522803">Facebook</a>
+            </button>
+        </div>
+    </div>
+    <!--NAV BAR BELOW-->
+    <div id="hero-bar">
+        <div id="logo-bar">
+            <img src="EliteLightingLogo2.png" alt="top-logo">
+        </div>
+        <div id="button-box">
+            <div id="button-bar">
+                <button class="hero-buttons" onclick="scrollToSection('top-bar')">
+                    <i class="fi fi-ts-house-chimney"></i>
+                    Home
+                </button>
+                <button class="hero-buttons" onclick="scrollToSection('bottom-container')">
+                    <i class="fi fi-ts-lightbulb-on"></i>
+                    Services
+                </button>
+                <button class="hero-buttons" onclick="scrollToSection('service-box-container')">
+                    <i class="fi fi-ts-phone-call"></i>
+                    Contact
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--TOP CONTAINER BELOW-->
+    <div id="top-container">
+        <div id="top-container-left" class="top-container-sides">
+            <div id="top-header">
+                <p id="header-sentence">
+                    Looking to transform Your Space with Brilliant Lighting Solutions for Every Occasion?
+                </p>
+                <p id="hook-sentence-two">
+                    Then look no futher!
+                </p>
+            </div>
+        </div>
+        <div id="top-container-right" class="top-container-sides">
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="address">Your Address:</label>
+                <input type="text" id="address" name="address" required>
+            
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="message">What do you need?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Send Request</button>
+            </form>         
+            <div id="response-message" style="display: none;"></div>
+        </div>
+    </div>
+    <!--BOTTOM CONTAINER-->
+    <div id="bottom-container">
+        <div id="bottom-container-left">
+            <div id="main-contact-box">
+                <div id="contact-us-box">
+                    <p id="contact-us">Contact Us</p>
+                </div>
+                <div id="contact-info-box">
+                    <div class="info-boxes">
+                        <p class="info">(208) 419-7347</p>
+                    </div>
+                    <div class="info-boxes">
+                        <p class="info">
+                            <a class="info" href="mailto:Elitelightingpreston@gmail.com">
+                                Elitelightingpreston@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-container-right">
+            <div id="service-head">
+                <p id="offered-services">
+                    Services we offer
+                </p>
+            </div>
+            <div id="service-box-container">
+                <div class="service-boxes">
+                    <p class="service-names">Permanent Lighting</p>
+                    <p class="service-explain"> Fixed lighting installed for long-term use in a space</p>
+                </div>
+                <div class="service-boxes">
+                    <p class="service-names">Seasonal Lighting</p>
+                    <p class="service-explain"> Fixed lighting installed for long-term use in a space</p>
+                </div>
+                <div class="service-boxes">
+                    <p class="service-names">Event Lighting</p>
+                    <p class="service-explain"> Fixed lighting installed for long-term use in a space</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pulsing-border"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Epfri4qWNZhK5n4YJ"); // Replace with your Public Key
+       })();
+    </script>
+    <script src="script.js"></script> <!-- Ensure your JavaScript file is linked here -->
 </body>
 </html>
