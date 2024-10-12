@@ -7,6 +7,17 @@
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="EliteLightingLogo2.png" type="image/x-icon">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+
+    <meta name="description" content="Elite Lighting provides permanent, seasonal, and event lighting solutions for homes and businesses. Transform your space with brilliant lighting for any occasion.">
+    <meta name="keywords" content="lighting, permanent lighting, seasonal lighting, event lighting, lighting solutions, home lighting, commercial lighting, elite lighting">
+    <meta name="author" content="Elite Lighting">
+
+    <meta property="og:title" content="Elite Lighting - Transform Your Space with Brilliant Lighting Solutions">
+    <meta property="og:description" content="Permanent, seasonal, and event lighting for homes and businesses.">
+    <meta property="og:image" content="EliteLightingLogo2.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
 </head>
 <body>
     <div id="top-bar">
@@ -21,7 +32,7 @@
     <!--NAV BAR BELOW-->
     <div id="hero-bar">
         <div id="logo-bar">
-            <img src="EliteLightingLogo2.png" alt="top-logo">
+            <img src="EliteLightingLogo2.png" alt="Elite Lighting Logo" loading="lazy">
         </div>
         <div id="button-box">
             <div id="button-bar">
@@ -29,11 +40,11 @@
                     <i class="fi fi-ts-house-chimney"></i>
                     Home
                 </button>
-                <button class="hero-buttons" onclick="scrollToSection('bottom-container')">
+                <button class="hero-buttons" onclick="scrollToSection('services-section')">
                     <i class="fi fi-ts-lightbulb-on"></i>
                     Services
                 </button>
-                <button class="hero-buttons" onclick="scrollToSection('service-box-container')">
+                <button class="hero-buttons" onclick="scrollToSection('bottom-container-left')">
                     <i class="fi fi-ts-phone-call"></i>
                     Contact
                 </button>
@@ -74,50 +85,56 @@
             <div id="response-message" style="display: none;"></div>
         </div>
     </div>
-    <!--BOTTOM CONTAINER-->
-    <div id="bottom-container">
-        <div id="bottom-container-left">
-            <div id="main-contact-box">
-                <div id="contact-us-box">
-                    <p id="contact-us">Contact Us</p>
+    <!--services-container-->
+    <div id="services-section">
+        <div id="services-container">
+            <div id="services-top-box">
+                <h1 id="services-header">Services we offer</h1>
+            </div>
+            <div id="services-bottom-box">
+                <div id="service-box-one" class="service-boxes">
+                    <div class="services-titles">Permanent Lighting</div>
+                    <div class="services-discriptions">Fixed lighting installed for long-term use in a space</div>
+                    <div class="service-images" id="service-img-one"></div>
                 </div>
-                <div id="contact-info-box">
-                    <div class="info-boxes">
-                        <p class="info">(208) 419-7347</p>
-                    </div>
-                    <div class="info-boxes">
-                        <p class="info">
-                            <a class="info" href="mailto:Elitelightingpreston@gmail.com">
-                                Elitelightingpreston@gmail.com
-                            </a>
-                        </p>
-                    </div>
+                <div id="service-box-two" class="service-boxes">
+                    <div class="services-titles">Seasonal Lighting</div>
+                    <div class="services-discriptions">Fixed lighting installed for long-term use in a space</div>
+                    <div class="service-images" id="service-img-two"></div>
                 </div>
+                <div id="service-box-three" class="service-boxes">
+                    <div class="services-titles">Event Lighting</div>
+                    <div class="services-discriptions">Fixed lighting installed for long-term use in a space</div>
+                    <div class="service-images" id="service-img-three"></div>
+                </div>
+            </div>
+            <div>
+                <a id="gallery-button" href="gallery.html">View Gallery</a>
             </div>
         </div>
-        <div id="bottom-container-right">
-            <div id="service-head">
-                <p id="offered-services">
-                    Services we offer
-                </p>
+    </div>
+    <!--SERVICE CONTAINER BELOW-->
+    <div id="contact-section">
+        <div id="contact-container">
+            <div id="contact-top">
+                <h1 id="contact-title">
+                    Contact Us
+                </h1>
             </div>
-            <div id="service-box-container">
-                <div class="service-boxes">
-                    <p class="service-names">Permanent Lighting</p>
-                    <p class="service-explain"> Fixed lighting installed for long-term use in a space</p>
+            <div id="contact-bottom">
+                <div id="contact-left">
+                    <h1 id="phonenumber">(208) 419-7347</h1>
                 </div>
-                <div class="service-boxes">
-                    <p class="service-names">Seasonal Lighting</p>
-                    <p class="service-explain"> Fixed lighting installed for long-term use in a space</p>
-                </div>
-                <div class="service-boxes">
-                    <p class="service-names">Event Lighting</p>
-                    <p class="service-explain"> Fixed lighting installed for long-term use in a space</p>
+                <div id="contact-right">
+                    <h1 id="email"><a id="email" href="mailto:Elitelightingpreston@gmail.com">Elitelightingpreston@gmail.com</a></h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="pulsing-border"></div>
+
+
+
+
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -126,5 +143,28 @@
        })();
     </script>
     <script src="script.js"></script> <!-- Ensure your JavaScript file is linked here -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Elite Lighting",
+          "image": "EliteLightingLogo2.png",
+          "@id": "",
+          "url": "https://yourwebsite.com",
+          "telephone": "(208) 419-7347",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Address",
+            "addressLocality": "City",
+            "addressRegion": "State",
+            "postalCode": "Zip Code",
+            "addressCountry": "US"
+          },
+          "email": "Elitelightingpreston@gmail.com"
+        }
+        </script>   
 </body>
 </html>
+
+
+
