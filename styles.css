@@ -77,7 +77,6 @@ html{
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.603);
     }
         #button-bar{
             width: 90%;
@@ -189,6 +188,11 @@ html{
                 button:hover {
                     background-color: grey;
                 }
+/* BUFFER SECTIONS */
+#buffer-section{
+    width: 100%;
+    height: 100px;
+}
 /* SERVICE CONTAINER BELOW */
 #services-section{
     width: 100%;
@@ -438,90 +442,83 @@ html{
                         background-size: cover;
                     }
                     
-/* Base styles for mobile devices */
-@media only screen and (max-width: 768px) {
+
+/* General mobile styling with more spacing */
+@media (max-width: 768px) {
+
+    /* Adjusting the top-bar for mobile */
     #top-bar {
         flex-direction: column;
-        gap: 20px;
-        height: auto;
+        gap: 20px; /* Increased space between items */
+        padding: 20px;
     }
 
-    .top-bar-sides {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    #phone-number-top, a {
-        font-size: 16px;
-    }
-
+    /* Make the logo and buttons stack vertically with more space */
     #hero-bar {
         flex-direction: column;
-        gap: 20px;
         height: auto;
+        padding: 20px 0; /* Adding top and bottom padding */
     }
 
-    #logo-bar img {
-        width: 50%;
-        height: auto;
-    }
-
-    #button-bar {
-        flex-direction: column;
-        gap: 20px;
+    #logo-bar, #button-box {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px; /* More space below the logo and buttons */
     }
 
     .hero-buttons {
-        width: 100%;
+        width: 80%;
         font-size: 18px;
+        margin-bottom: 20px; /* Increased space between buttons */
     }
 
+    /* Adjust the top container for mobile */
     #top-container {
         flex-direction: column;
         height: auto;
+        padding: 20px;
+        gap: 20px; /* More space between container sides */
     }
 
     .top-container-sides {
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Space between sections */
     }
 
-    #bottom-container {
+    /* Contact form styling on mobile */
+    #contact-form {
+        width: 90%;
+        margin: 20px auto; /* Space around the form */
+    }
+
+    /* Service section adjustments */
+    #services-section {
         flex-direction: column;
         height: auto;
+        gap: 30px; /* More space between service boxes */
+        padding: 20px;
     }
 
-    #bottom-container-left, #bottom-container-right {
+    .service-boxes {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px; /* Increased space between each service box */
     }
 
-    .info-boxes, .service-boxes {
+    /* Adjusting the contact section for mobile */
+    #contact-section {
+        height: auto;
+        padding: 30px; /* More padding for the section */
+    }
+
+    #contact-container {
+        flex-direction: column;
+        gap: 20px; /* Space between the left and right contact sections */
+    }
+
+    #contact-left, #contact-right {
         width: 100%;
         text-align: center;
+        margin-bottom: 20px; /* Space between contact details */
     }
 }
 
-/* Further scaling for smaller devices like phones */
-@media only screen and (max-width: 480px) {
-    #top-bar, #hero-bar, #bottom-container {
-        padding: 10px;
-    }
-
-    #phone-number-top, a {
-        font-size: 14px;
-    }
-
-    #button-bar {
-        gap: 10px;
-    }
-
-    .hero-buttons {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .service-names, .service-explain {
-        font-size: 18px;
-    }
-}
