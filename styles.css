@@ -91,6 +91,7 @@ html{
                 width: 150px;
                 height: 50px;
                 color: rgb(255, 255, 255);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                 background: transparent;
                 border: none;
                 border-right: 1px solid white;
@@ -129,6 +130,7 @@ html{
                 justify-content: center;
                 text-align: center;
                 flex-direction: column;
+                font-weight: bold;
             }
                 #header-sentence{
                     width: 100%;
@@ -220,6 +222,7 @@ html{
             #services-header{
                 color: white;
                 font-size: 40px;
+                font-weight: bold;
             }
         #services-bottom-box{
             width: 100%;
@@ -276,6 +279,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.603);
 }
     #contact-container{
         width: 80%;
@@ -296,6 +300,7 @@ html{
                 font-size: 40px;
                 color: white;
                 text-align: center;
+                font-weight: bold;
             }
         #contact-bottom{
             width: 100%;
