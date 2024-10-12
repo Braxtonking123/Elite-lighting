@@ -220,7 +220,6 @@ html{
             #services-header{
                 color: white;
                 font-size: 40px;
-                text-decoration: underline;
             }
         #services-bottom-box{
             width: 100%;
@@ -297,7 +296,6 @@ html{
                 font-size: 40px;
                 color: white;
                 text-align: center;
-                text-decoration: underline;
             }
         #contact-bottom{
             width: 100%;
