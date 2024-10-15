@@ -5,6 +5,9 @@ html {
     height: auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+a{
+    text-decoration: none;
+}
 .second-page{
     background-image: none;
     background-color: rgba(0, 0, 0, 0.63);
