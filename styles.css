@@ -462,6 +462,9 @@ html {
     
 }
 @media only screen and (max-width: 768px) {
+    html {
+        background-size: cover; /* Use contain for mobile */
+    }
     /* Top bar: stack elements vertically */
     #top-bar {
         display: flex;
