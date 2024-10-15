@@ -1,11 +1,16 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css');
 
-html{
-    width: 99%;
-    height: auto;
+html, body{
+        width: 100%; 
+        height: 100%; 
+}
+body {
     background-image: url("Background.jpeg");
+    
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center; 
+    min-height: 100vh;
+    margin: 0;
 }
 .second-page{
     background-image: none;
@@ -274,7 +279,7 @@ html{
 /* CONTACT BOX BELOW HERE */
 #contact-section{
     width:100%;
-    height: 400px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,130 +402,135 @@ html{
                 }
                     #img-three{
                         background-image: url("perm-light/perm-light-three.png");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-four{
                         background-image: url("perm-light/perm-light-four.png");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-five{
                         background-image: url("perm-light/perm-light-five.png");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-six{
                         background-image: url("perm-light/perm-light-six.png");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-seven{
                         background-image: url("season-light/season-light-one.png");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-ten{
                         background-image: url("season-light/season-light-four.jpg");
                         background-size: cover;
+                        background-repeat: no-repeat;
                     }
                     #img-eleven{
                         background-image: url("season-light/season-light-five.jpg");
                         background-size: cover;
+                        background-repeat: no-repeat;
                     }
                     #img-twelve{
                         background-image: url("season-light/season-light-six.jpg");
                         background-size: cover;
+                        background-repeat: no-repeat;
                     }
                     #img-thirdteen{
                         background-image: url("patio-light/patio-light-one.JPG");
                         background-size: cover;
+                        background-repeat: no-repeat;
                     }
                     #img-fourteen{
                         background-image: url("patio-light/patio-light-two.JPG");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-fifteen{
                         background-image: url("patio-light/patio-light-three.JPG");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     #img-sixteen{
                         background-image: url("patio-light/patio-light-four.JPG");
-                        background-size: cover;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                     
 
-/* General mobile styling with more spacing */
-@media (max-width: 768px) {
-
-    /* Adjusting the top-bar for mobile */
+#dontworry{
+    
+}
+@media only screen and (max-width: 768px) {
+    /* Top bar: stack elements vertically */
     #top-bar {
+        display: flex;
         flex-direction: column;
-        gap: 20px; /* Increased space between items */
-        padding: 20px;
-    }
-
-    /* Make the logo and buttons stack vertically with more space */
-    #hero-bar {
-        flex-direction: column;
+        align-items: center;
+        gap: 20px;
         height: auto;
-        padding: 20px 0; /* Adding top and bottom padding */
     }
 
-    #logo-bar, #button-box {
+    .top-bar-sides {
         width: 100%;
+        display: flex;
         justify-content: center;
-        margin-bottom: 20px; /* More space below the logo and buttons */
+        margin: 10px 0;
     }
 
-    .hero-buttons {
-        width: 80%;
-        font-size: 18px;
-        margin-bottom: 20px; /* Increased space between buttons */
-    }
-
-    /* Adjust the top container for mobile */
-    #top-container {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        gap: 20px; /* More space between container sides */
-    }
-
-    .top-container-sides {
-        width: 90%;
-        margin-bottom: 20px; /* Space between sections */
-    }
-
-    /* Contact form styling on mobile */
-    #contact-form {
-        width: 90%;
-        margin: 20px auto; /* Space around the form */
-    }
-
-    /* Service section adjustments */
-    #services-section {
-        flex-direction: column;
-        height: auto;
-        gap: 30px; /* More space between service boxes */
-        padding: 20px;
-    }
-
-    .service-boxes {
-        width: 100%;
-        margin-bottom: 30px; /* Increased space between each service box */
-    }
-
-    /* Adjusting the contact section for mobile */
-    #contact-section {
-        height: auto;
-        padding: 30px; /* More padding for the section */
-    }
-
-    #contact-container {
-        flex-direction: column;
-        gap: 20px; /* Space between the left and right contact sections */
-    }
-
-    #contact-left, #contact-right {
+    #top-bar-left, #top-bar-right {
         width: 100%;
         text-align: center;
-        margin-bottom: 20px; /* Space between contact details */
+    }
+
+    /* Navbar buttons: stack vertically */
+    .navbar-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar-buttons button {
+        width: 90%;  /* Slight padding from edges */
+        margin: 5px 0;
+    }
+
+    /* Hero section: stack text and logo */
+    .hero-logo, .hero-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Containers: stack vertically and add padding */
+    .container, #third-container, #first-container, #second-container, #bottom-container {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Gallery images: stack in a single column */
+    .gallery-images {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+    /* Ensure text elements are centered */
+    h1, h2, h3, p {
+        text-align: center;
     }
 }
 
+                  
+                    
