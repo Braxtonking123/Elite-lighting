@@ -471,35 +471,14 @@ html {
                     }
                     
 
-#dontworry{
-    
-}
 @media only screen and (max-width: 768px) {
     html {
-        background-size: cover; /* Use contain for mobile */
+        background-size: cover; 
     }
-    /* Top bar: stack elements vertically */
     #top-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        height: auto;
-    }
-
-    .top-bar-sides {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 10px 0;
+        height: 40px;
     }
-
-    #top-bar-left, #top-bar-right {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Navbar buttons: stack vertically */
     .navbar-buttons {
         display: flex;
         flex-direction: column;
@@ -507,40 +486,81 @@ html {
         width: 100%;
         margin-top: 10px;
     }
-
-    .navbar-buttons button {
-        width: 90%;  /* Slight padding from edges */
-        margin: 5px 0;
-    }
-
-    /* Hero section: stack text and logo */
-    .hero-logo, .hero-text {
+    #hero-bar{
         width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    /* Containers: stack vertically and add padding */
-    .container, #third-container, #first-container, #second-container, #bottom-container {
-        padding: 20px;
-        width: 100%;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
     }
-
-    /* Gallery images: stack in a single column */
-    .gallery-images {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column */
-        grid-gap: 20px;
+    #top-container{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-    /* Ensure text elements are centered */
-    h1, h2, h3, p {
-        text-align: center;
+    #header-sentence{
+        font-size: 25px;
+    }
+    #header-sentence-two{
+        font-size: 25px;
+    }
+    #services-section{
+        width: 100%;
+        height: 800px;
+    }
+    #services-bottom-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .service-boxes{
+        width: 100%;
+        height: 33.3%;
+    }
+    .services-titles{
+        font-size: 20px;
+    }
+    .services-discriptions{
+        font-size: 15px;
+    }
+    #contact-section{
+        width: 100%;
+        height: 300px;
+    }
+    #contact-container{
+        width: 100%;
+        display: flex;
+    }
+    #contact-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-left{
+        width: 100%;
+        height: 50%;
+    }
+    #contact-right{
+        width: 100%;
+        height: 50%;
+    }
+    #email{
+        font-size: 20px;
+    }
+    /* Gallery images: stack in a single column */
+    .gallery-containers{
+        display: flex;
+        flex-direction: column;
+    }
+    #gallery-left{
+        width: 100%;
+        height: 50%;
+    }
+    #gallery-right{
+        width: 100%;
+        height: 50%;
+    }
+    .picture-containers{
+        width: 100%;
+        height: 100%;
     }
 }
 
